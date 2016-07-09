@@ -5,7 +5,6 @@ alias uint DWORD;
 alias ushort WORD;
 alias byte BYTE;
 alias ulong ULONGLONG;
-alias size_t uintptr_t;
 
 const IMAGE_NUMBEROF_DIRECTORY_ENTRIES=16;
 
@@ -119,15 +118,15 @@ struct IMAGE_DATA_DIRECTORY {
 }
 
 struct PEFileStatistics{
-    int applicationBits;
     ushort Machine;
     ushort Subsystem;
     ushort DllCharacteristics;
-    uintptr_t  ImageBase;
-    uintptr_t  AddressOfEntryPoint;
-    uintptr_t  BaseOfCode;
-    size_t  SizeOfCode;
-    size_t SizeOfImage;
+    int applicationBits;
+    ulong  ImageBase;
+    ulong  AddressOfEntryPoint;
+    ulong  BaseOfCode;
+    ulong  SizeOfCode;
+    ulong SizeOfImage;
 }
 
 class PEFile{
