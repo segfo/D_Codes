@@ -176,6 +176,7 @@ class PEFile{
                 PEx86Read();
                 break;
             default:
+                throw new Exception("Invalid image optional header.");
         }
     }
     
