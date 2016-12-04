@@ -1,0 +1,10 @@
+{
+	"name": "D_LinuxAPIHook",
+	"authors": [
+		"segfo"
+	],
+	"description": "Linux API Hook so library.",
+	"copyright": "Copyright © 2016, segfo",
+	"license": "proprietary",
+	"dflags":["-fPIC","-shared","-defaultlib=libphobos2.so"]
+}
